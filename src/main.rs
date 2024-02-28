@@ -423,7 +423,7 @@ fn handle_error(log_path: &str) {
 fn __main(args: &[String]) -> i32 {
 	let mut log_path = env::temp_dir();
 	log_path.push(format!(
-		"vscode-inno-updater-{:?}.log",
+		"qkcd-inno-updater-{:?}.log",
 		SystemTime::now()
 			.duration_since(SystemTime::UNIX_EPOCH)
 			.unwrap()
@@ -478,7 +478,7 @@ fn parse(path: &Path) -> Result<(), Box<dyn error::Error>> {
 fn main() {
 	let args: Vec<String> = env::args().collect();
 	let log_path = format!(
-		"vscode-inno-updater-{:?}.log",
+		"qkcd-inno-updater-{:?}.log",
 		SystemTime::now()
 			.duration_since(SystemTime::UNIX_EPOCH)
 			.unwrap()
